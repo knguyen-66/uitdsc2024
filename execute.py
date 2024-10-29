@@ -11,9 +11,9 @@ from torch.utils.data import DataLoader
 from timeit import default_timer as timer
 from transformers import AutoTokenizer, AutoModel, ResNetModel
 
-from make_dummy_data import make_dummy_data
-from data import load_data, get_labels, RawData, data_process
-from utilities import train_step, test_step, get_metrics, export_result
+from .make_dummy_data import make_dummy_data
+from .data import load_data, get_labels, RawData, data_process
+from .utilities import train_step, test_step, get_metrics, export_result
 
 
 class SingleClassificationLayers(nn.Module):
